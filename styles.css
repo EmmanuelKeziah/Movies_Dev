@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.hero{
+    background: red;
+    height: 50vh;
+    width: 100%;
+}
+
+.container {
+    padding: 0 2rem;
+}
+
+.header {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#movieList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.box {
+    background: black;
+    
+}
