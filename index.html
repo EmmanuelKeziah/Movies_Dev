@@ -5,20 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies Tab</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="hero-bg"></div>
-    <div class="popular-movies container">
-        <h3 class="header">Popular Movies</h3>
-        <div id="movieList">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+    <div class="mainWrapper">
+        <nav>
+            <div class="header container">
+                <div class="leftNav ">
+                    <img src="./Images/logo-icon.svg" alt="logo-favicon">
+                    <ul>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TVShows</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                </div>
 
-        </div>
+                <div class="rightNav">
+                    <!-- <img src="./Images/plus-icon.png" alt="plus-icon"> -->
+                    <ul>
+                        <li class="lang"><a href="#">EN</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Join TMDB</a></li>
+                    </ul>
+                    <img src="./Images/search.svg" alt="search-icon">
+                </div>
+            </div>
+        </nav>
+
+        <section class="heroSection">
+            <div class="input-wrapper container">
+                <img src="./Images/search.png" alt="search-icon">
+                <input type="text" placeholder="Search for a movie, tv show, person...">
+            </div>
+
+            <section class="hero-display container">
+                <h1>Welcome.</h1>
+                <p>Millions of movies, TV shows and people to discover. Explore now.</p>
+                <input type="text" placeholder="Search for a movie, tv show, person...">
+
+            </section>
+
+            <div class="popular-movies container">.
+                <div class="movie-header">
+                 <h2 class="title">What's Popular</h2>
+                </div>
+        
+               <div class="sideDiv">
+                    <ul>
+                        <li class="stream">Streaming</li>
+                        <li>On TV</li>
+                        <li>For Rent</li>
+                        <li>In Theaters</li>
+                    </ul>
+               </div> 
+            </div>
+        
+            
+            <div id="movieList">
+                <!-- Movie items will be dynamically inserted here -->
+            </div>
+        </section>
+        
+    
     </div>
-
 </body>
 </html>
