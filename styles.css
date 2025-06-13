@@ -88,17 +88,46 @@
 }
 
 .hero-display {
-    background: #032541;
-    height: 300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: #032541;
+    transition: background-image 1s ease-in-out;
+    overflow: hidden;
+    background-size: cover;
+    height: 300px;
     color: #fff;
+
     h1 {
         font-size: 48px;
         font-weight: 700;
         line-height: 0.6;
     }
+
+    .search-wrapper {
+        input {
+            position: relative;
+            width: 98%;
+            padding: 0.8rem;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            font-size: 18px;
+        }
+
+        button {
+            position: absolute;
+            right: 3%;
+            padding: 0.8rem 2rem;
+            color: #fff;
+            background: linear-gradient(to right, #18CFB4, #05B9DA);
+            font-size: 18px;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+        }
+    }
+        
 
     p {
         font-size: 32px;
@@ -153,13 +182,14 @@ li.stream{
 
 #movieList {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
     padding: 20px;
 
     img{
-        width: 100%;
+        width: 80%;
         height: auto;
+        border-radius: 10px;
 
     }
 }

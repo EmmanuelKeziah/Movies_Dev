@@ -43,13 +43,20 @@
             </div>
 
             <section class="hero-display container">
-                <h1>Welcome.</h1>
-                <p>Millions of movies, TV shows and people to discover. Explore now.</p>
-                <input type="text" placeholder="Search for a movie, tv show, person...">
+                <div class="hero-content">
+                    <h1>Welcome.</h1>
+                    <p>
+                        Millions of movies, TV shows and people to discover. Explore now.
+                    </p>
+                </div>
 
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Search for a movie, tv show, person...">
+                    <button type="submit">Search</button>
+                </div>
             </section>
 
-            <div class="popular-movies container">.
+            <div class="popular-movies container">
                 <div class="movie-header">
                  <h2 class="title">What's Popular</h2>
                 </div>
@@ -63,8 +70,7 @@
                     </ul>
                </div> 
             </div>
-        
-            
+    
             <div id="movieList">
                 <!-- Movie items will be dynamically inserted here -->
             </div>
@@ -72,5 +78,9 @@
         
     
     </div>
+
+    <p style="font-size: 0.85rem; color: gray; text-align: center; padding: 1rem;">
+        Disclaimer: This page is a frontend clone made for educational purposes only. It is not affiliated with or endorsed by the original website or company. No data is collected, and this site has no backend functionality.
+    </p>
 </body>
 </html>

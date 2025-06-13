@@ -30,3 +30,24 @@ const fetchMoviesByPopularity = async function (){
     
     
 }();
+
+const heroSection =document.querySelector(".hero-display");
+
+const backgrounds = [
+    'url("./Images/background-1.jpg")',
+    'url("./Images/background-2.jpg")',
+    'url("./Images/background-3.jpg")',
+    'url("./Images/background-4.jpg")',
+    'url("./Images/background-5.jpg")',
+    'url("./Images/background-6.jpg")',
+]
+
+let index = 0;
+function changeBackground() {
+    heroSection.style.backgroundImage = backgrounds[index];
+    index = (index + 1) % backgrounds.length;
+}
+
+setInterval(changeBackground, 10000); 
+
+changeBackground(); 
