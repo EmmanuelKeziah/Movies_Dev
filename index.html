@@ -11,7 +11,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="mainWrapper">
+    <section class="mainWrapper">
         <nav>
             <div class="header container">
                 <div class="leftNav ">
@@ -56,28 +56,63 @@
                 </div>
             </section>
 
-            <div class="popular-movies container">
+            <section class="caption trending-movies container">
+                <div class="movie-header">
+                    <h2 class="title">Trending Movies</h2>
+                </div>
+                <div class="sideDiv">
+                    <ul>
+                        <li class="dark-blue">Today</li>
+                        <li>This Week</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <div id="trendy">
+                <!-- Movie items will be dynamically inserted here -->
+            </div>
+
+            <hr>
+            
+            <section class="caption topRated container">
+                <div class="movie-header">
+                 <h2 class="title">Top Rated</h2>
+                </div>
+        
+               <div class="sideDiv">
+                    <ul>
+                        <li class="stream">Popular</li>
+                        <li>On TV</li>
+                        <li>For Rent</li>
+                        <li>In Theaters</li>
+                    </ul>
+               </div> 
+            </section>
+    
+            <div id="topRated"></div>
+    
+            <hr>
+
+            <section class="caption popular-movies container">
                 <div class="movie-header">
                  <h2 class="title">What's Popular</h2>
                 </div>
         
                <div class="sideDiv">
                     <ul>
-                        <li class="stream">Streaming</li>
+                        <li class="stream">Popular</li>
                         <li>On TV</li>
                         <li>For Rent</li>
                         <li>In Theaters</li>
                     </ul>
                </div> 
-            </div>
+            </section>
     
             <div id="movieList">
-                <!-- Movie items will be dynamically inserted here -->
             </div>
         </section>
-        
-    
-    </div>
+
+    </section>
 
     <p style="font-size: 0.85rem; color: gray; text-align: center; padding: 1rem;">
         Disclaimer: This page is a frontend clone made for educational purposes only. It is not affiliated with or endorsed by the original website or company. No data is collected, and this site has no backend functionality.
