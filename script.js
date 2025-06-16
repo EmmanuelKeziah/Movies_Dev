@@ -57,7 +57,7 @@ const fetchMoviesByTrend = async function (){
 }();
 
 const fetchMoviesByTopRated = async function (){
-    let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=57c4e66de7369cc5cc594f0c7d514b28";
+    let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=1ef33d0988889fd4f6c374211d20e38c";
 
     let allMovies = await fetch (url);
     let allMoviesJson = await allMovies.json();
